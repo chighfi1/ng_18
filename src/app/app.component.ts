@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { JellyFormContainerComponent } from "./jelly-form-container/jelly-form-container.component";
+import { JellyFormContainerComponent } from "./jelly-feature/components/jelly-form-container/jelly-form-container.component";
 
 @Component({
   selector: 'app-root',

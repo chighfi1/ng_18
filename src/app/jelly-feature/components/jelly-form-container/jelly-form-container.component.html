@@ -1,0 +1,28 @@
+<div class="form-container">
+    <form [formGroup]="form">
+        <div class="field">
+            <label for="numberOfTenticles">Number of Tenticles</label>
+            <input type="text" formControlName="numberOfTenticles">
+            @if(!!form.get('numberOfTenticles')?.hasError('required')) {
+                <div class="error" style="background-color: red;">^ Required</div>
+            }
+        </div>
+        <div class="field">
+            <label for="isSalty">Is Salty</label>
+            <input type="text" formControlName="isSalty">
+            @if(!!form.get('isSalty')?.hasError('required')) {
+                <div class="error" style="background-color: red;">^ Required</div>
+            }
+        </div>
+        <div class="field" style="margin-bottom: 2rem;">
+            <label for="breed">Breed</label>
+            <input type="text" formControlName="breed">
+            @if(!!form.get('breed')?.hasError('required')) {
+                <div class="error" style="background-color: red;">^ Required</div>
+            }
+        </div>
+        <button (click)="submit()">
+            Submit
+        </button>
+    </form>
+</div>

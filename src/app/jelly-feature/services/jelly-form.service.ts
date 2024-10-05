@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { JellyForm } from '../../../models/jelly-form';
+import { JellyForm } from '../../core/models/jelly-form';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { debounceTime, distinctUntilChanged } from 'rxjs';
 

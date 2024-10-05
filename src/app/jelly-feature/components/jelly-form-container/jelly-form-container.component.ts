@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { JellyForm } from '../../../../models/jelly-form';
+import { JellyForm } from '../../../core/models/jelly-form';
 import { JellyFormService } from '../../services/jelly-form.service';
 
 @Component({

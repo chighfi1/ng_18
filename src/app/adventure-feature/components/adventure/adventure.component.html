@@ -1,0 +1,22 @@
+<div class="form-container" [formGroup]="form">
+    <div class="control-container">
+        <label>Explorer</label>
+        <input formControlName="explorerName">
+    </div>
+    <div class="control-container">
+        <label>Max Distance</label>
+        <input formControlName="maxDistance">
+    </div>
+    <div class="control-container">
+        <label>Max Weight</label>
+        <input formControlName="maxWeight">
+    </div>
+    <div class="control-container">
+        <label>Destination</label>
+        <input formControlName="destination">
+    </div>
+</div>
+
+
+    <input name="two-way" (ngModelChange)="showChange($event)" [(ngModel)]="twoWayBinding" />
+    <p>{{twoWayBinding | cort}}</p>
